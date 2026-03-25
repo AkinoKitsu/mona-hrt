@@ -3,7 +3,7 @@
   "profileTitle": "Paramètres",
   "intakesTitle": "Prises",
   "levelsTitle": "Niveaux",
-  "suppliesTitle": "Fournitures",
+  "suppliesTitle": "Stock",
   "empty_home": "Commencez par ajouter un planning dans les paramètres",
   "empty_intakes": "Les prises enregistrées apparaîtront ici",
   "empty_levels": "Les injections d’estradiol s’afficheront dans cet onglet",
