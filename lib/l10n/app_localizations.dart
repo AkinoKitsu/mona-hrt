@@ -9,6 +9,7 @@ import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
 import 'app_localizations_fr.dart';
+import 'app_localizations_ko.dart';
 import 'app_localizations_pt.dart';
 
 // ignore_for_file: type=lint
@@ -98,6 +99,7 @@ abstract class AppLocalizations {
     Locale('en'),
     Locale('es'),
     Locale('fr'),
+    Locale('ko'),
     Locale('pt'),
     Locale('pt', 'BR')
   ];
@@ -275,6 +277,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Português do Brasil'**
   String get brazilianPortuguese;
+
+  /// No description provided for @korean.
+  ///
+  /// In en, this message translates to:
+  /// **'한국어'**
+  String get korean;
 
   /// No description provided for @enableNotifications.
   ///
@@ -850,7 +858,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['de', 'en', 'es', 'fr', 'pt'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['de', 'en', 'es', 'fr', 'ko', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -874,6 +882,7 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
     case 'en': return AppLocalizationsEn();
     case 'es': return AppLocalizationsEs();
     case 'fr': return AppLocalizationsFr();
+    case 'ko': return AppLocalizationsKo();
     case 'pt': return AppLocalizationsPt();
   }
 

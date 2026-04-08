@@ -102,6 +102,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get brazilianPortuguese => 'Português do Brasil';
 
   @override
+  String get korean => '한국어';
+
+  @override
   String get enableNotifications => 'Enable notifications';
 
   @override
